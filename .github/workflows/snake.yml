@@ -10,19 +10,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Always checkout first so we're inside the repo workspace
       - uses: actions/checkout@v4
 
-      # Generate into runner temp (not the repo) to avoid unlink permission issues
+      # clean any leftover dist dir from previous attempts (ignore errors)
+      - name: Clean old dist
+        run: rm -rf dist || true
+
+      # generate into the runner's temp path to avoid unlink EACCES in workspace
       - name: Generate snake svgs (tmp)
         uses: Platane/snk@v3
         with:
           github_user_name: ForgeAndFangStudio
-          outputs: |
+          # IMPORTANT: write to the temp dir, not ./dist
+          outputs: >-
             ${{ runner.temp }}/snake.svg
             ${{ runner.temp }}/snake-dark.svg?palette=github-dark
 
-      # Move files from tmp to repo and commit
+      # copy from temp into repo and commit
       - name: Commit snake
         run: |
           mkdir -p assets
