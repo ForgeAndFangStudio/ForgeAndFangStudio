@@ -65,13 +65,19 @@ Our mantra: **quality over quantity**.
 
 ---
 
-## 🌌 Fun Animations
+## 🎞️ Fun Animations
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/asset/example.svg" alt="Activity Graph Example" />
+  <!-- Activity graph (dynamic, no Actions needed) -->
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=ForgeAndFangStudio&hide_border=true&radius=8"
+    alt="ForgeAndFangStudio activity graph" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DenverCoder1/github-readme-streak-stats/master/example-streak-stats.gif" alt="Animated Streak Example" />
+  <!-- Streak (dynamic, no Actions needed) -->
+  <img
+    src="https://streak-stats.demolab.com?user=ForgeAndFangStudio&hide_longest_streak=true"
+    alt="ForgeAndFangStudio GitHub streak" />
 </p>
 
 ---
@@ -86,4 +92,11 @@ Our mantra: **quality over quantity**.
 ---
 
 <!-- Subtle footer wave -->
-<img width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/wave.svg">
+<p align="center">
+  <svg width="100%" height="64" viewBox="0 0 1440 64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <!-- uses current text colour at low opacity so it works in light/dark themes -->
+    <path d="M0,32 C120,16 240,0 360,0 C480,0 600,16 720,26.7 C840,37.3 960,42.7 1080,37.3 C1200,32 1320,16 1440,5.3 L1440,64 L0,64 Z"
+          fill="currentColor" fill-opacity="0.08"/>
+  </svg>
+</p>
+
