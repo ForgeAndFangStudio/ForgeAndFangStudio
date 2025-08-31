@@ -10,19 +10,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake svgs
+      # Always checkout first so we're inside the repo workspace
+      - uses: actions/checkout@v4
+
+      # Generate into runner temp (not the repo) to avoid unlink permission issues
+      - name: Generate snake svgs (tmp)
         uses: Platane/snk@v3
         with:
           github_user_name: ForgeAndFangStudio
           outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
+            ${{ runner.temp }}/snake.svg
+            ${{ runner.temp }}/snake-dark.svg?palette=github-dark
 
-      - uses: actions/checkout@v4
+      # Move files from tmp to repo and commit
       - name: Commit snake
         run: |
           mkdir -p assets
-          cp dist/snake*.svg assets/
+          cp "${RUNNER_TEMP}/snake.svg" assets/snake.svg
+          cp "${RUNNER_TEMP}/snake-dark.svg" assets/snake-dark.svg
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/snake*.svg
