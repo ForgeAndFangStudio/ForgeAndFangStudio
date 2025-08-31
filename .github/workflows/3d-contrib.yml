@@ -1,0 +1,26 @@
+name: 3D Contributions
+on:
+  schedule: [{ cron: "0 2 * * 1" }]   # weekly (Mondays)
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render 3D wall
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        with:
+          username: ForgeAndFangStudio
+
+      - name: Commit 3D images
+        run: |
+          mkdir -p assets/3d
+          cp profile-3d-contrib/profile-south-season-animate.svg assets/3d/
+          cp profile-3d-contrib/profile-night-rainbow.svg assets/3d/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/3d
+          git commit -m "chore: update 3D contribution wall" || echo "No changes"
+          git push
