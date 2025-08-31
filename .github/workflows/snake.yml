@@ -1,0 +1,26 @@
+name: Generate Contribution Snake
+on:
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ForgeAndFangStudio
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+      - uses: actions/checkout@v4
+      - name: Commit snake
+        run: |
+          mkdir -p assets
+          cp dist/snake*.svg assets/
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/snake*.svg
+          git commit -m "chore: update contribution snake" || echo "No changes"
+          git push
