@@ -1,12 +1,24 @@
 <!-- Typing Banner -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&width=800&lines=Forge+%26+Fang+Studios+%E2%80%94+Security+%7C+Development+%7C+Design;We+craft+secure%2C+scalable%2C+visually+striking+experiences." alt="Forge & Fang Studios intro">
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&width=850&lines=Forge+%26+Fang+Studios+%7C+Security+%7C+Development+%7C+Design;Crafting+secure%2C+scalable%2C+visually+striking+experiences." alt="Forge & Fang Studios intro">
 </p>
 
 <h1 align="center">🌟 Forge & Fang Studios 🌟</h1>
 <p align="center">
   Trio of specialists across <b>Security</b>, <b>Development</b>, and <b>Design</b>.<br/>
   We blend creativity & code to build cross-platform products that mystify, surprise, and delight.
+</p>
+
+<p align="center">
+  <a href="https://komarev.com/ghpvc/?username=ForgeAndFangStudio&style=for-the-badge">
+    <img src="https://komarev.com/ghpvc/?username=ForgeAndFangStudio&style=for-the-badge" alt="Profile views"/>
+  </a>
+  <a href="https://github.com/ForgeAndFangStudio">
+    <img alt="followers" src="https://img.shields.io/github/followers/ForgeAndFangStudio?style=for-the-badge">
+  </a>
+  <a href="https://forgeandfangstudio.com">
+    <img alt="site" src="https://img.shields.io/badge/Website-forgeandfangstudio.com-black?style=for-the-badge">
+  </a>
 </p>
 
 ---
@@ -36,44 +48,35 @@ Our mantra: **quality over quantity**.
 
 <p align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ForgeAndFangStudio&layout=compact&langs_count=8" />
+</p>
+
+<p align="center">
   <a href="https://github-profile-trophy.vercel.app/?username=ForgeAndFangStudio">
-    <img height="165" src="https://github-profile-trophy.vercel.app/?username=ForgeAndFangStudio&margin-w=12&no-frame=true" />
+    <img src="https://github-profile-trophy.vercel.app/?username=ForgeAndFangStudio&margin-w=12&no-frame=true&row=1&column=6" />
   </a>
 </p>
 
 ---
 
-## 🧱 3D Contribution Wall
+## 🏆 Achievements
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/3d/profile-night-rainbow.svg" />
-    <img src="assets/3d/profile-south-season-animate.svg" width="100%" alt="3D contribution wall"/>
-  </picture>
+  <img src="https://github-contributor-stats.vercel.app/api?username=ForgeAndFangStudio&combine_all_yearly_contributions=true" />
 </p>
 
 ---
 
-## 📊 Metrics Dashboard
+## 🌌 Fun Animations
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg" />
-    <img src="assets/metrics-light.svg" width="100%" alt="Metrics dashboard"/>
-  </picture>
+  <img src="https://raw.githubusercontent.com/ashutosh00710/github-readme-activity-graph/master/asset/example.svg" alt="Activity Graph Example" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DenverCoder1/github-readme-streak-stats/master/example-streak-stats.gif" alt="Animated Streak Example" />
 </p>
 
 ---
 
-## 🐍 Contribution Snake
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
-    <img alt="contribution snake" src="assets/snake.svg" />
-  </picture>
-</p>
-
----
-
-## 🤝 Connect
+## 📫 Connect
 - 🌐 [Website](https://forgeandfangstudio.com)  
 - ✉️ [Email](mailto:forgeandfang@mail.com)  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/forgeandfangstudio)  
