@@ -42,12 +42,12 @@ Our code is forged in fire — quality > quantity.
 
 ## 📊 Live Intel Feed
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ForgeAndFangStudio&show_icons=true&rank_icon=github&hide_title=true&theme=radical" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ForgeAndFangStudio&show_icons=true&rank_icon=github&hide_title=true&theme=radical&count_private=true&include_all_commits=true" />
   <img height="165" src="https://streak-stats.demolab.com?user=ForgeAndFangStudio&theme=radical&hide_longest_streak=true" />
 </p>
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ForgeAndFangStudio&layout=compact&langs_count=8&theme=radical" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ForgeAndFangStudio&layout=compact&langs_count=8&theme=radical&count_private=true&include_all_commits=true" />
 </p>
 
 <p align="center">
@@ -79,6 +79,32 @@ Our code is forged in fire — quality > quantity.
     src="https://streak-stats.demolab.com?user=ForgeAndFangStudio&theme=highcontrast&hide_longest_streak=true"
     alt="ForgeAndFangStudio GitHub streak" />
 </p>
+
+---
+
+## 🔐 Private Repo Stats Setup
+
+> **Note**: The stats above include data from both public and private repositories. To ensure private repo data is properly displayed, you may need to set up authentication.
+
+### GitHub Personal Access Token Setup
+
+1. **Create a Personal Access Token**:
+   - Go to GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
+   - Click "Generate new token (classic)"
+   - Select scopes: `repo` (for private repo access) and `read:user`
+   - Copy the token (you won't see it again!)
+
+2. **For Self-Hosted Stats** (Recommended for full private data):
+   - Deploy your own instance of [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) to Vercel
+   - Add your GitHub token as an environment variable
+   - Update the URLs in this README to point to your deployed instance
+
+3. **Current Configuration**:
+   - ✅ **GitHub Readme Stats**: Configured to count private repos (`count_private=true`)
+   - ✅ **Streak Stats**: Automatically includes private contributions when authenticated
+   - ✅ **Activity Graph**: Includes private contributions automatically
+   - ✅ **Trophies**: Based on authenticated user data
+   - ✅ **Contributor Stats**: Counts both public and private contributions
 
 ---
 
