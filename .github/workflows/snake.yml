@@ -24,10 +24,32 @@ jobs:
           outputs: >-
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+
+      # debug: verify files were generated
+      - name: Debug - Check generated files
+        run: |
+          echo "Current directory contents:"
+          ls -la
+          echo "Dist directory contents:"
+          ls -la dist/ || echo "Dist directory does not exist"
+          echo "Checking for snake files:"
+          ls -la dist/snake*.svg || echo "No snake files found in dist/"
 
       # copy from dist into assets and commit
       - name: Commit snake
         run: |
+          # Check if files exist before copying
+          if [ ! -f "dist/snake.svg" ]; then
+            echo "Error: dist/snake.svg not found!"
+            exit 1
+          fi
+          if [ ! -f "dist/snake-dark.svg" ]; then
+            echo "Error: dist/snake-dark.svg not found!"
+            exit 1
+          fi
+          
           mkdir -p assets
           cp "dist/snake.svg" assets/snake.svg
           cp "dist/snake-dark.svg" assets/snake-dark.svg
