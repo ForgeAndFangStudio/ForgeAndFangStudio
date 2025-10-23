@@ -23,6 +23,15 @@
 
 ---
 
+<!-- 3D Profile Visual Divider -->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/3d/profile-night-rainbow.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/3d/profile-south-season-animate.svg">
+    <img src="./assets/3d/profile-night-rainbow.svg" alt="3D Profile Visualization" height="180">
+  </picture>
+</p>
+
 ## 🧭 Ops Manifesto
 We deliver:
 - 🔐 **Security-first architectures**  
@@ -58,6 +67,17 @@ Our code is forged in fire — quality > quantity.
 
 ---
 
+## 📊 Advanced Metrics Dashboard
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/metrics-light.svg">
+    <img src="./assets/metrics-dark.svg" alt="Advanced Metrics Dashboard" height="400">
+  </picture>
+</p>
+
+---
+
 ## 🏆 Black-Ops Milestones
 <p align="center">
   <img src="https://github-contributor-stats.vercel.app/api?username=ForgeAndFangStudio&combine_all_yearly_contributions=true&theme=dark" />
@@ -78,6 +98,17 @@ Our code is forged in fire — quality > quantity.
   <img
     src="https://streak-stats.demolab.com?user=ForgeAndFangStudio&theme=highcontrast&hide_longest_streak=true"
     alt="ForgeAndFangStudio GitHub streak" />
+</p>
+
+---
+
+## 🐍 Code Contribution Matrix
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/snake.svg">
+    <img src="./assets/snake-dark.svg" alt="Code Contribution Snake Animation" height="200">
+  </picture>
 </p>
 
 ---
