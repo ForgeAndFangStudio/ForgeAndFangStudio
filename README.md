@@ -28,7 +28,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/3d/profile-night-rainbow.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/3d/profile-south-season-animate.svg">
-    <img src="./assets/3d/profile-night-rainbow.svg" alt="3D Profile Visualization" height="180">
+    <img src="./assets/3d/profile-night-rainbow.svg" alt="3D Profile Visualization" width="100%" style="max-width: 100%; height: auto;">
   </picture>
 </p>
 
@@ -72,7 +72,7 @@ Our code is forged in fire — quality > quantity.
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/metrics-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/metrics-light.svg">
-    <img src="./assets/metrics-dark.svg" alt="Advanced Metrics Dashboard" height="400">
+    <img src="./assets/metrics-dark.svg" alt="Advanced Metrics Dashboard" width="100%" style="max-width: 100%; height: auto;">
   </picture>
 </p>
 
