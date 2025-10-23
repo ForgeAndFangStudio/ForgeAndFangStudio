@@ -82,32 +82,6 @@ Our code is forged in fire — quality > quantity.
 
 ---
 
-## 🔐 Private Repo Stats Setup
-
-> **Note**: The stats above include data from both public and private repositories. To ensure private repo data is properly displayed, you may need to set up authentication.
-
-### GitHub Personal Access Token Setup
-
-1. **Create a Personal Access Token**:
-   - Go to GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
-   - Click "Generate new token (classic)"
-   - Select scopes: `repo` (for private repo access) and `read:user`
-   - Copy the token (you won't see it again!)
-
-2. **For Self-Hosted Stats** (Recommended for full private data):
-   - Deploy your own instance of [github-readme-stats](https://github.com/anuraghazra/github-readme-stats) to Vercel
-   - Add your GitHub token as an environment variable
-   - Update the URLs in this README to point to your deployed instance
-
-3. **Current Configuration**:
-   - ✅ **GitHub Readme Stats**: Configured to count private repos (`count_private=true`)
-   - ✅ **Streak Stats**: Automatically includes private contributions when authenticated
-   - ✅ **Activity Graph**: Includes private contributions automatically
-   - ✅ **Trophies**: Based on authenticated user data
-   - ✅ **Contributor Stats**: Counts both public and private contributions
-
----
-
 ## 📡 Comm Links
 - 🌐 [Website](https://forgeandfangstudio.com)  
 - ✉️ [Email](mailto:forgeandfang@mail.com)  
