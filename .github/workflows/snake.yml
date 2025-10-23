@@ -16,22 +16,21 @@ jobs:
       - name: Clean old dist
         run: rm -rf dist || true
 
-      # generate into the runner's temp path to avoid unlink EACCES in workspace
-      - name: Generate snake svgs (tmp)
+      # generate snake svgs into dist directory
+      - name: Generate snake svgs
         uses: Platane/snk@v3
         with:
           github_user_name: ForgeAndFangStudio
-          # IMPORTANT: write to the temp dir, not ./dist
           outputs: >-
-            ${{ runner.temp }}/snake.svg
-            ${{ runner.temp }}/snake-dark.svg?palette=github-dark
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
 
-      # copy from temp into repo and commit
+      # copy from dist into assets and commit
       - name: Commit snake
         run: |
           mkdir -p assets
-          cp "${RUNNER_TEMP}/snake.svg" assets/snake.svg
-          cp "${RUNNER_TEMP}/snake-dark.svg" assets/snake-dark.svg
+          cp "dist/snake.svg" assets/snake.svg
+          cp "dist/snake-dark.svg" assets/snake-dark.svg
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/snake*.svg
